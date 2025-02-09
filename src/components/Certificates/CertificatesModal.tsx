@@ -1,4 +1,5 @@
-import React from 'react';
+import M from 'materialize-css';
+import React, { useEffect } from 'react';
 import { Certificate } from '../../types/types';
 
 interface CertificatesModalProps {
@@ -12,19 +13,17 @@ const CertificatesModal: React.FC<CertificatesModalProps> = ({
   onClose,
   certificates
 }) => {
+  useEffect(() => {
+    const elems = document.querySelectorAll('.modal');
+    M.Modal.init(elems);
+  }, []);
+
   if (!isOpen) return null;
 
   return (
     <div id="modal1" className="modal">
       <div className="modal-content">
-        <div className="certificates-grid">
-          {certificates.map((cert, index) => (
-            <div key={index} className="certificate-item">
-              <img src={cert.imageURL} alt={cert.title} />
-              <div dangerouslySetInnerHTML={{ __html: cert.caption }} />
-            </div>
-          ))}
-        </div>
+        <div id="juicebox-container" className="juicebox-container" />
       </div>
       <div className="modal-footer">
         <button onClick={onClose} className="modal-close waves-effect waves-green btn-flat">

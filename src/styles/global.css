@@ -1,0 +1,26 @@
+.project-image {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.tech-stack {
+  margin: 1rem 0;
+}
+
+.tech-stack .chip {
+  margin: 0.5rem;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.btn-large {
+  margin: 0.5rem;
+}
+
+/* ...existing styles... */

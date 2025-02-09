@@ -1,0 +1,33 @@
+.nav-wrapper {
+  background-color: #26a69a;
+  padding: 0 20px;
+}
+
+.nav-wrapper ul {
+  margin: 0;
+}
+
+.nav-wrapper ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.nav-wrapper ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-wrapper ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.house-logo {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
